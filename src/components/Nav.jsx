@@ -5,7 +5,6 @@ function Nav() {
 
   const links = [
     { to: '/', label: 'Home' },
-    { to: '/resume', label: 'Resume' },
     { to: '/privacy', label: 'Privacy' },
   ]
 

@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className="site-footer">
       <p>
-        © {year} matan-makes. <Link to="/privacy">Privacy</Link>.
+        © {year}. <Link to="/privacy">Privacy Policy</Link>.
       </p>
     </footer>
   )
