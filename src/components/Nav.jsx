@@ -9,11 +9,18 @@ function Nav() {
   ]
 
   return (
-    <nav className="site-nav">
-      <ul>
+    <nav>
+      <ul className="flex gap-6 m-0 p-0 list-none">
         {links.map(({ to, label }) => (
           <li key={to}>
-            <Link to={to} className={location.pathname === to ? 'active' : ''}>
+            <Link
+              to={to}
+              className={`text-[15px] no-underline hover:text-rose ${
+                location.pathname === to
+                  ? 'text-rose font-semibold'
+                  : 'text-cloud'
+              }`}
+            >
               {label}
             </Link>
           </li>
